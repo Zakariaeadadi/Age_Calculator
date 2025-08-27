@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(252, 245, 237);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid rgb(64, 64, 73);
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 27px;
+    color: #fff;
+}
+
+.titre {
+    background-color: blue;
+    border-radius: 10px 10px 0 0;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+.Date {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fefefe;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: 15px;
+}
+button {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgb(8, 210, 216);
+    color: #111;
+}
+
+@media (max-width: 600px) {
+    header {
+        /* padding: 10px; */
+        font-size: 14px;
+    }
+}
+.box {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    font-family: sans-serif;
+    animation:  apparence 0.5s ease-in-out;
+}
+@keyframes apparence {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
